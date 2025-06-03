@@ -24,6 +24,8 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+        primaryText: 'hsl(var(--foreground))', // For PRD: designSystem.typography.body text-primaryText
+        secondaryText: 'hsl(var(--muted-foreground))', // For PRD: designSystem.typography.subheading text-secondaryText
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -61,13 +63,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        accentBlue: 'hsl(var(--primary))', // PRD accentBlue #1877F2
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+      fontFamily: {
+        sans: ['Arial', 'sans-serif'], // PRD: primaryFont
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
